@@ -11,3 +11,5 @@ function getButtonStyle(size) {
             return { fontSize: "14px", padding: "10px" };
     }
 }
+let myButtonStyle = getButtonStyle("medium"); // OK
+//myButtonStyle = getButtonStyle('extra-large');

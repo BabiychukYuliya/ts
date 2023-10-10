@@ -2,13 +2,13 @@ type MixedType = {
   [key: string]: string | number;
 };
 
-const userInfo = {
+const userInfo: MixedType = {
   name: "Bob",
   age: 28,
   country: "United States",
 };
 
-const bookDescription = {
+const bookDescription: MixedType = {
   title: "Alhimic",
   pages: 89,
 };

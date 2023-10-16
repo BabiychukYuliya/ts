@@ -28,7 +28,10 @@ const student = {
   name: "Jon",
   age: 25,
 };
-function getProperty<T, K extends keyof T>(obj: T, key: K) {
+function getProperty<ObjectType, KeyType extends keyof ObjectType>(
+  obj: ObjectType,
+  key: KeyType
+): ObjectType[KeyType] {
   return obj[key];
 }
 let studentName = getProperty(student, "name");
